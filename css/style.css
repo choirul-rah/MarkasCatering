@@ -11759,7 +11759,7 @@ h5,
     color: #e4002b !important;
 }
 
-.ftco-navbar-light.scrolled .nav-item.cta>a {
+/*.ftco-navbar-light.scrolled .nav-item.cta>a {
     color: #fff !important;
     background: #e4002b;
     border: none !important;
@@ -11772,7 +11772,7 @@ h5,
 
 .ftco-navbar-light.scrolled .nav-item.cta.cta-colored span {
     border-color: #e4002b;
-}
+}*/
 
 @media (max-width: 991.98px) {
     .ftco-navbar-light.scrolled .navbar-nav {
