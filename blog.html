@@ -57,16 +57,23 @@
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown04">
                             <a class="dropdown-item" href="shop.html">Shop</a>
-                            <a class="dropdown-item" href="wishlist.html">Wishlist</a>
-                            <a class="dropdown-item" href="product-single.html" target="_blank">Single Product</a>
+                            <!-- <a class="dropdown-item" href="wishlist.html">Wishlist</a> -->
+                            <!-- <a class="dropdown-item" href="product-single.html" target="_blank">Single Product</a> -->
                             <a class="dropdown-item" href="cart.html">Cart</a>
-                            <a class="dropdown-item" href="checkout.html">Checkout</a>
+                            <a class="dropdown-item" href="list-order.html">Transaction</a>
                         </div>
                     </li>
                     <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                     <!-- <li class="nav-item active"><a href="blog.html" class="nav-link">Blog</a></li> -->
                     <!-- <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li> -->
                     <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
+                    <li class="nav-item mx-3">
+                        <a id="linkUser" href="#login-modal" data-toggle="modal" data-target="#login-modal" class="d-flex justify-content-center align-items-center text-center" style="white-space: nowrap;line-height: 1.5">
+                            <span class="icon ion-md-person" style="font-size: 32px"></span>
+                            &nbsp;&nbsp;
+                            <span style="font-size: 70%" id="nametag">Hello, Sign in<br>My Account</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -349,13 +356,30 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <a type="button" href="signup.html" class="btn" ><u>Sign Up</u></a>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Sign In</button>
+                    <a type="button" href="signup.html" class="btn"><u>Sign Up</u></a>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="signin">Sign In</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- MODAL LOGIN -->
+    <!-- MODAL LOGOUT -->
+    <div class="modal fade" id="logout-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Log Out?</h5>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <a type="button" href="signup.html" class="btn"><u>Cancel</u></a>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="signout">Sign Out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL LOGOUT -->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>

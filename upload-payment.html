@@ -96,68 +96,54 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Single-product</li>
+                            <li class="breadcrumb-item active" aria-current="page">Upload Payment</li>
                         </ol>
                     </nav>
                 </div>
                 <div class="col-lg-6 mb-5 ftco-animate">
+                    <h6 class="mb-1 pb-0" style="color: #dc3545;text-align: left !important">Merchant-2</h6>
+                    <!-- <h6 style="text-align: left !important">(INV/20200408/XX/IV/520722086)</h6> -->
                     <a href="images/buffet.jpg" class="image-popup"><img src="images/buffet.jpg" class="img-fluid" alt="Colorlib Template"></a>
                 </div>
                 <div class="col-lg-6 product-details pl-md-5 ftco-animate">
-                    <h3>Buffet (Prasmanan)</h3>
-                    <div class="rating d-flex">
-                        <p class="text-left mr-4">
-                            <a href="#" class="mr-2">5.0</a>
-                            <a href="#"><span class="ion-ios-star-outline"></span></a>
-                            <a href="#"><span class="ion-ios-star-outline"></span></a>
-                            <a href="#"><span class="ion-ios-star-outline"></span></a>
-                            <a href="#"><span class="ion-ios-star-outline"></span></a>
-                            <a href="#"><span class="ion-ios-star-outline"></span></a>
-                        </p>
-                        <p class="text-left mr-4">
-                            <a href="#" class="mr-2" style="color: #000;">100 <span style="color: #bbb;">Rating</span></a>
-                        </p>
-                        <p class="text-left">
-                            <a href="#" class="mr-2" style="color: #000;">500 <span style="color: #bbb;">Sold</span></a>
-                        </p>
-                    </div>
-                    <p class="price"><span>$120.00</span></p>
-                    <p>Originating in 16th-century France, buffet-style dining has stood the test of time and continues to be a popular choice for many restaurant customers. By definition, a buffet is a meal where guests serve themselves from a variety of dishes set out on a table or sideboard.
-                    </p>
-                    <div class="row mt-4">
-                        <div class="col-md-6">
-                            <div class="form-group d-flex">
-                                <div class="select-wrap">
-                                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                                    <select name="" id="" class="form-control">
-                                        <option value="">Small (&lt;50)</option>
-                                        <option value="">Medium (50-100)</option>
-                                        <option value="">Large (100-300)</option>
-                                        <option value="">Extra Large (300&lt;)</option>
-                                    </select>
+                    <form action="list-order.html">
+                        <div class="cart-total mb-3">
+                            <h4 style="color: #dc3545;text-align: left !important">Buffet-1</h4>
+                            <h6 style="text-align: left !important">(INV/20200408/XX/IV/520722086)</h6>
+                            <hr>
+                            <h3>Cart Totals</h3>
+                            <p class="d-flex">
+                                <span>Subtotal</span>
+                                <span class="totalnya">$120.00</span>
+                            </p>
+                            <p class="d-flex">
+                                <span>Delivery</span>
+                                <span>$0.00</span>
+                            </p>
+                            <p class="d-flex">
+                                <span>Discount</span>
+                                <span>$0.00</span>
+                            </p>
+                            <hr>
+                            <p class="d-flex total-price">
+                                <span>Total</span>
+                                <span class="totalnya">$120.00</span>
+                            </p>
+                            <p>
+                                <small style="color: #dc3545">Full Payment</small>
+                            </p>
+                            <p>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" required="" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Choose file</label>
                                 </div>
-                            </div>
+                            </p>
                         </div>
-                        <div class="w-100"></div>
-                        <div class="input-group col-md-6 d-flex mb-3">
-                            <span class="input-group-btn mr-2">
-                                <button type="button" class="quantity-left-minus btn" data-type="minus" data-field="">
-                                    <i class="ion-ios-remove"></i>
-                                </button>
-                            </span>
-                            <input type="text" id="quantity" name="quantity" class="form-control input-number" value="1" min="1" max="100">
-                            <span class="input-group-btn ml-2">
-                                <button type="button" class="quantity-right-plus btn" data-type="plus" data-field="">
-                                    <i class="ion-ios-add"></i>
-                                </button>
-                            </span>
-                        </div>
-                        <div class="w-100"></div>
-                        <div class="col-md-12">
-                            <p style="color: #000;">600 pax available</p>
-                        </div>
-                    </div>
-                    <p><a href="cart.html" class="btn btn-black py-3 px-5">Add to Cart</a></p>
+                        <p>
+                            <!-- <button type="submit" class="btn btn-primary py-3 px-4">Upload</button> -->
+                            <a href="list-order.html" type="submit" class="btn btn-primary py-3 px-4">Upload</a>
+                        </p>
+                    </form>
                 </div>
             </div>
         </div>
