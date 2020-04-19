@@ -58,7 +58,7 @@
                         <div class="dropdown-menu" aria-labelledby="dropdown04">
                             <a class="dropdown-item" href="shop.html">Shop</a>
                             <a class="dropdown-item" href="wishlist.html">Wishlist</a>
-                            <a class="dropdown-item" href="product-single.html">Single Product</a>
+                            <a class="dropdown-iteqqm" href="product-single.html">Single Product</a>
                             <a class="dropdown-item" href="cart.html">Cart</a>
                             <a class="dropdown-item" href="checkout.html">Checkout</a>
                         </div>
@@ -67,6 +67,13 @@
                     <!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
                     <!-- <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li> -->
                     <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
+                    <li class="nav-item mx-3">
+                        <a href="#login-modal" data-toggle="modal" data-target="#login-modal" class="d-flex justify-content-center align-items-center text-center" style="white-space: nowrap;line-height: 1.5">
+                            <span class="icon ion-md-person" style="font-size: 32px"></span>
+                            &nbsp;&nbsp;
+                            <span style="font-size: 70%">Hello, Sign in<br>My Account</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -85,8 +92,16 @@
     <section class="ftco-section">
         <div class="container">
             <div class="row">
+                <div class="col-md-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Single-product</li>
+                        </ol>
+                    </nav>
+                </div>
                 <div class="col-lg-6 mb-5 ftco-animate">
-                    <a href="images/product-1.jpg" class="image-popup"><img src="images/buffet.jpg" class="img-fluid" alt="Colorlib Template"></a>
+                    <a href="images/buffet.jpg" class="image-popup"><img src="images/buffet.jpg" class="img-fluid" alt="Colorlib Template"></a>
                 </div>
                 <div class="col-lg-6 product-details pl-md-5 ftco-animate">
                     <h3>Buffet (Prasmanan)</h3>
@@ -360,7 +375,7 @@
                     <p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         Copyright &copy;<script>
-                        document.write(new Date().getFullYear());
+                            document.write(new Date().getFullYear());
                         </script> All rights reserved | AKPSI final project by <a href="https://chrlrahmdan.github.io/MarkasCatering/" target="_blank">Kelompok 1</a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
@@ -371,7 +386,48 @@
     <!-- loader -->
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div><!-- MODAL LOGIN -->
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Log In</h5>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">
+                                        Remember me.
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a type="button" href="signup.html" class="btn" ><u>Sign Up</u></a>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Sign In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL LOGIN -->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
