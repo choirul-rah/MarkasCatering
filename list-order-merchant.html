@@ -72,7 +72,7 @@
                     <li class="nav-item active dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown04">
-                            <a class="dropdown-item" href="shop.html">Payment Approval (2)</a>
+                            <a class="dropdown-item" href="list-order-admin.html">Payment Approval (2)</a>
                         </div>
                     </li>
                     <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
@@ -118,93 +118,95 @@
                                     <th>&nbsp;</th>
                                     <th>Product</th>
                                     <th>Expected Delivery</th>
-                                    <th>Order</th>
-                                    <th>Payment</th>
+                                    <!-- <th>Order</th> -->
                                     <th>Total Price</th>
+                                    <th>Status</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr class="text-center">
+                                <tr class="text-left">
                                     <td class="image-prod">
                                         <h6 class="mb-1 pb-0" style="color: #dc3545;text-align: left !important">Merchant-1</h6>
-                                        <smile style="text-align: left !important;white-space: nowrap;" >(INV/20200408/XX/IV/518159595)</smile>
+                                        <smile style="text-align: left !important;white-space: nowrap;">(INV/20200408/XX/IV/518159595)</smile>
                                         <p></p>
                                         <div class="img" style="background-image:url(images/buffet.jpg);"></div>
                                     </td>
                                     <td class="product-name">
-                                        <h5>Buffet-1</h5>
+                                        <h5><a href="product-single.html" style="color: #000000" target="_blank">Buffet-1</a></h5>
                                         <small style="color: #dc3545">Full Payment</small>
                                     </td>
-                                    <td class="price"><p>2020-04-09</p></td>
+                                    <td class="price">2020-04-09</td>
+                                    <td class="totalnya">$120.00</td>
                                     <td class="price">
-                                        <p><u>Approved</u></p>
+                                        <p><u>Order Approved</u></p>
+                                        <p><u style="white-space: nowrap;color: #dc3545">Full Payment Approved</u></p>
+                                    </td>
+                                    <td>
                                         <a type="button" style="white-space: nowrap;" href="order-approved.html" target="_blank" class="btn btn-primary">Check Detail</a>
                                     </td>
-                                    <td class="price">
-                                        <p><u>FP Approved</u></p>
-                                    </td>
-                                    <td class="totalnya">$120.00</td>
                                 </tr>
                                 <tr class="text-center">
                                     <td class="image-prod">
-                                        <h6 class="mb-1 pb-0" style="color: #dc3545;text-align: left !important">Merchant-2</h6>
+                                        <h6 class="mb-1 pb-0" style="color: #dc3545;text-align: left !important">Merchant-1</h6>
                                         <smile style="text-align: left !important;white-space: nowrap;">(INV/20200408/XX/IV/520722086)</smile>
                                         <p></p>
                                         <div class="img" style="background-image:url(images/naskun.jpg);"></div>
                                     </td>
                                     <td class="product-name">
-                                        <h5>Nasi Kuning-1</h5>
+                                        <h5><a href="product-single.html" style="color: #000000" target="_blank">Nasi Kuning-1</a></h5>
                                         <small style="color: #dc3545">Down Payment</small>
                                     </td>
-                                    <td class="price"><p>2020-04-09</p></td>
+                                    <td class="price">2020-04-09</td>
+                                    <td class="totalnya">$60.00</td>
                                     <td class="price">
-                                        <p><u>Approved</u></p>
+                                        <p><u>Order Approved</u></p>
+                                        <p><u style="white-space: nowrap;color: #dc3545">Down Payment Uploaded</u></p>
+                                    </td> 
+                                    <td>
                                         <a type="button" style="white-space: nowrap;" href="order-approved.html" target="_blank" class="btn btn-primary">Check Detail</a>
                                     </td>
-                                    <td class="price">
-                                        <p><u>DP Approved</u></p>
-                                    </td>
-                                    <td class="totalnya">$60.00</td>
                                 </tr>
                                 <tr class="text-center">
                                     <td class="image-prod">
-                                        <h6 class="mb-1 pb-0" style="color: #dc3545;text-align: left !important">Merchant-4</h6>
+                                        <h6 class="mb-1 pb-0" style="color: #dc3545;text-align: left !important">Merchant-1</h6>
                                         <smile style="text-align: left !important;white-space: nowrap;">(INV/20200408/XX/IV/520722036)</smile>
                                         <p></p>
                                         <div class="img" style="background-image:url(images/klepon.jpg);"></div>
                                     </td>
                                     <td class="product-name">
-                                        <h5>Klepon-1</h5>
+                                        <h5><a href="product-single.html" style="color: #000000" target="_blank">Klepon-1</a></h5>
                                         <small style="color: #dc3545">Down Payment</small>
                                     </td>
-                                    <td class="price"><p>2020-04-09</p></td>
+                                    <td class="price">2020-04-09</td>
+                                    <td class="totalnya">$30.00</td>
                                     <td class="price">
-                                        <p><u>Approved</u></p>
+                                        <p><u>Order Approved</u></p>
+                                        <p><u style="white-space: nowrap;color: #dc3545">Waiting for DP</u></p>
+                                    </td> 
+                                    <td>
                                         <a type="button" style="white-space: nowrap;" href="order-approved.html" target="_blank" class="btn btn-primary">Check Detail</a>
                                     </td>
-                                    <td class="price">
-                                        <p><u>DP Uploaded</u></p>
-                                    </td>
-                                    <td class="totalnya">$30.00</td>
                                 </tr>
                                 <tr class="text-center">
                                     <td class="image-prod">
-                                        <h6 class="mb-1 pb-0" style="color: #dc3545;text-align: left !important">Merchant-2</h6>
+                                        <h6 class="mb-1 pb-0" style="color: #dc3545;text-align: left !important">Merchant-1</h6>
                                         <smile style="text-align: left !important;white-space: nowrap;">(INV/20200408/XX/IV/520722082)</smile>
                                         <p></p>
                                         <div class="img" style="background-image:url(images/putu.jpeg);"></div>
                                     </td>
                                     <td class="product-name">
-                                        <h5>Putu-1</h5>
+                                        <h5><a href="product-single.html" style="color: #000000" target="_blank">Putu-1</a></h5>
                                         <small style="color: #dc3545">Full Payment</small>
                                     </td>
-                                    <td class="price"><p>2020-04-09</p></td>
-                                    <td class="price">
-                                        <p><u>Placed</u></p>
-                                        <a type="button" style="white-space: nowrap;" href="order-approval.html" target="_blank" class="btn btn-primary">Check Detail</a>
-                                    </td>
-                                    <td class="price">-</td>
+                                    <td class="price">2020-04-09</td>
                                     <td class="totalnya">$20.00</td>
+                                    <td class="price">
+                                        <p><u>Order Placed</u></p>
+                                    </td>
+                                    <td>
+                                        <a type="button" style="white-space: nowrap;" href="order-approval.html" target="_blank" class="btn btn-primary">Check Approval</a>
+                                    </td>
                                 </tr>
                                 <!-- END TR-->
                             </tbody>

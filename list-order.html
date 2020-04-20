@@ -56,7 +56,7 @@
                     <li class="nav-item active dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown04">
-                            <a class="dropdown-item" href="shop.html">Shop</a> 
+                            <a class="dropdown-item" href="shop.html">Shop</a>
                             <a class="dropdown-item" href="cart.html">Cart</a>
                             <a class="dropdown-item" href="list-order.html">Transaction</a>
                         </div>
@@ -70,7 +70,7 @@
                     <li class="nav-item active dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown04">
-                            <a class="dropdown-item" href="shop.html">Payment Approval</a>
+                            <a class="dropdown-item" href="list-order-admin.html">Payment Approval</a>
                         </div>
                     </li>
                     <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
@@ -116,80 +116,104 @@
                                     <th>&nbsp;</th>
                                     <th>Product</th>
                                     <th>Expected Delivery</th>
-                                    <th>Order</th>
-                                    <th>Payment</th>
+                                    <!-- <th>Order</th> -->
                                     <th>Total Price</th>
+                                    <th>Status</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="text-center">
                                     <td class="image-prod">
                                         <h6 class="mb-1 pb-0" style="color: #dc3545;text-align: left !important">Merchant-1</h6>
-                                        <h6 style="text-align: left !important">(INV/20200408/XX/IV/518159595)</h6>
+                                        <h6 style="text-align: left !important;white-space: nowrap;">(INV/20200408/XX/IV/518159595)</h6>
                                         <p></p>
                                         <div class="img" style="background-image:url(images/buffet.jpg);"></div>
                                     </td>
                                     <td class="product-name">
-                                        <h4>Buffet-1</h4>
+                                        <h4><a href="product-single.html" style="color: #000000" target="_blank">Buffet-1</a></h4>
                                         <small style="color: #dc3545">Full Payment</small>
                                     </td>
-                                    <td class="price my-3" style="border-right: 0px solid #8c8b8b !important;"><p>2020-04-09</p></td>
-                                    <td class="price">Approved</td>
-                                    <td class="price">
-                                        <a type="button" href="upload-payment.html" target="_blank" class="btn btn-primary">Upload FP</a>
+                                    <td class="price my-3" style="border-right: 0px solid #8c8b8b !important;">
+                                        2020-04-09
                                     </td>
                                     <td class="totalnya">$120.00</td>
+                                    <td class="price">
+                                        <p><u>Order Approved</u></p>
+                                        <p><u style="white-space: nowrap;color: #dc3545">Full Payment Approved</u></p>
+                                    </td>
+                                    <td class="price">
+                                        <a type="button" style="white-space: nowrap;" href="payment-uploaded.html" target="_blank" class="btn btn-primary">Check Detail</a>
+                                    </td>
                                 </tr>
                                 <tr class="text-center">
                                     <td class="image-prod">
                                         <h6 class="mb-1 pb-0" style="color: #dc3545;text-align: left !important">Merchant-2</h6>
-                                        <h6 style="text-align: left !important">(INV/20200408/XX/IV/520722086)</h6>
+                                        <h6 style="text-align: left !important;white-space: nowrap;">(INV/20200408/XX/IV/520722086)</h6>
                                         <p></p>
                                         <div class="img" style="background-image:url(images/naskun.jpg);"></div>
                                     </td>
                                     <td class="product-name">
-                                        <h4>Nasi Kuning-1</h4>
+                                        <h4><a href="product-single.html" style="color: #000000" target="_blank">Nasi Kuning-1</a></h4>
                                         <small style="color: #dc3545">Down Payment</small>
                                     </td>
-                                    <td class="price"><p>2020-04-09</p></td>
-                                    <td class="price">Approved</td>
-                                    <td class="price">DP Uploaded</td>
+                                    <td class="price">
+                                        2020-04-09
+                                    </td>
                                     <td class="totalnya">$60.00</td>
+                                    <td class="price">
+                                        <p><u>Order Approved</u></p>
+                                        <p><u style="white-space: nowrap;color: #dc3545">Down Payment Uploaded</u></p>
+                                    </td>
+                                    <td class="price">
+                                        <a type="button" style="white-space: nowrap;" href="payment-uploaded.html" target="_blank" class="btn btn-primary">Check Detail</a>
+                                    </td>
                                 </tr>
                                 <tr class="text-center">
                                     <td class="image-prod">
                                         <h6 class="mb-1 pb-0" style="color: #dc3545;text-align: left !important">Merchant-4</h6>
-                                        <h6 style="text-align: left !important">(INV/20200408/XX/IV/520722036)</h6>
+                                        <h6 style="text-align: left !important;white-space: nowrap;">(INV/20200408/XX/IV/520722036)</h6>
                                         <p></p>
                                         <div class="img" style="background-image:url(images/klepon.jpg);"></div>
                                     </td>
                                     <td class="product-name">
-                                        <h4>Klepon-1</h4>
+                                        <h4><a href="product-single.html" style="color: #000000" target="_blank">Klepon-1</a></h4>
                                         <small style="color: #dc3545">Down Payment</small>
                                     </td>
-                                    <td class="price"><p>2020-04-09</p></td>
-                                    <td class="price">Approved</td>
                                     <td class="price">
-                                        <p><u>DP Approved</u></p>
-                                        <a type="button" href="upload-payment.html" target="_blank" class="btn btn-primary">Upload FP</a>
+                                        2020-04-09
                                     </td>
                                     <td class="totalnya">$30.00</td>
+                                    <td class="price">
+                                        <p><u>Order Approved</u></p>
+                                        <p><u style="white-space: nowrap;color: #dc3545">Down Payment Approved</u></p>
+                                    </td>
+                                    <td class="price"> 
+                                        <a type="button" style="white-space: nowrap;" href="upload-payment.html" target="_blank" class="btn btn-primary">Upload FP</a>
+                                    </td>
                                 </tr>
                                 <tr class="text-center">
                                     <td class="image-prod">
                                         <h6 class="mb-1 pb-0" style="color: #dc3545;text-align: left !important">Merchant-2</h6>
-                                        <h6 style="text-align: left !important">(INV/20200408/XX/IV/520722082)</h6>
+                                        <h6 style="text-align: left !important;white-space: nowrap;">(INV/20200408/XX/IV/520722082)</h6>
                                         <p></p>
                                         <div class="img" style="background-image:url(images/putu.jpeg);"></div>
                                     </td>
                                     <td class="product-name">
-                                        <h4>Putu-1</h4>
+                                        <h4><a href="product-single.html" style="color: #000000" target="_blank">Putu-1</a></h4>
                                         <small style="color: #dc3545">Full Payment</small>
                                     </td>
-                                    <td class="price"><p>2020-04-09</p></td>
-                                    <td class="price">Placed</td>
-                                    <td class="price">-</td>
+                                    <td class="price">
+                                        2020-04-09
+                                    </td>
                                     <td class="totalnya">$20.00</td>
+                                    <td class="price">
+                                        Order Placed
+                                        <p><u style="white-space: nowrap;color: #dc3545">Waiting for Approval</u></p>
+                                    </td>                                    
+                                    <td class="price">
+                                        <a type="button" style="white-space: nowrap;" href="payment-uploaded.html" target="_blank" class="btn btn-primary">Check Detail</a>
+                                    </td>
                                 </tr>
                                 <!-- END TR-->
                             </tbody>
