@@ -145,43 +145,63 @@
                 </div>
                 <div class="col-xl-5">
                     <div class="row mt-5 pt-3">
-                        <div class="col-md-12 d-flex mb-5">
-                            <div class="cart-detail cart-total p-3 p-md-4">
-                                <h3 class="billing-heading mb-4">Cart Total</h3>
-                                <p class="d-flex">
-                                    <span>Subtotal</span>
-                                    <span>$120.00</span>
-                                </p>
-                                <p class="d-flex">
-                                    <span>Delivery</span>
-                                    <span>$0.00</span>
-                                </p>
-                                <p class="d-flex">
-                                    <span>Discount</span>
-                                    <span>$0.00</span>
-                                </p>
-                                <hr>
-                                <p class="d-flex total-price">
-                                    <span>Total</span>
-                                    <span>$120.00</span>
-                                </p>
+                        <form action="list-order.html">
+                            <div class="col-md-12 d-flex mb-2">
+                                <div class="cart-detail cart-total p-3 p-md-4">
+                                    <h3 class="billing-heading mb-4">Cart Total</h3>
+                                    <p class="d-flex">
+                                        <span>Subtotal</span>
+                                        <span>$120.00</span>
+                                    </p>
+                                    <p class="d-flex">
+                                        <span>Delivery</span>
+                                        <span>$0.00</span>
+                                    </p>
+                                    <p class="d-flex">
+                                        <span>Discount</span>
+                                        <span>$0.00</span>
+                                    </p>
+                                    <hr>
+                                    <p class="d-flex total-price">
+                                        <span>Total</span>
+                                        <span>$120.00</span>
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-12">
-                            <form action="list-order.html">
+                            <div class="col-md-12 mb-2">
+                                <div class="cart-detail p-3 p-md-4">
+                                    <h4 class="billing-heading mb-4">Expected Delivery</h4>
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <div class="radio">
+                                                <div class="form-group">
+                                                    <!-- <input type="date" name="bday" class="form-control"> -->
+                                                    <input required="" data-provide="datepicker">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <!-- <form action="list-order.html"> -->
                                 <div class="cart-detail p-3 p-md-4">
                                     <h3 class="billing-heading mb-4">Payment Method</h3>
                                     <div class="form-group">
                                         <div class="col-md-12">
                                             <div class="radio">
-                                                <label><input type="radio" name="optradio" required=""  class="mr-2"> Full Payment</label>
+                                                <label>
+                                                    <input type="radio" name="optradio" required=""  class="mr-2">&nbsp;Full Payment
+                                                </label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-md-12">
                                             <div class="radio">
-                                                <label><input type="radio" name="optradio" required="" class="mr-2"> Down Payment</label>
+                                                <label>
+                                                    <input type="radio" name="optradio" required="" class="mr-2">&nbsp;Down Payment
+                                                </label>
                                             </div>
                                         </div>
                                     </div>
@@ -196,8 +216,8 @@
                                         <button type="submit" class="btn btn-primary py-3 px-4">Place an order</button>
                                     </p>
                                 </div>
-                            </form>
-                        </div>
+                            </div>
+                        </form>
                     </div>
                 </div> <!-- .col-md-8 -->
             </div>
