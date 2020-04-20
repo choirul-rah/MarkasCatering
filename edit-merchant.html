@@ -74,94 +74,84 @@
     <section class="ftco-section ftco-no-pb ftco-no-pt bg-light" style="min-height: 90vh">
         <div class="container">
             <div class="row">
+                <div class="col-md-12">
+                    <nav aria-label="breadcrumb" class="mt-2">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="manage-merchant.html">Manage Merchant</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Edit Merchant</li>
+                        </ol>
+                    </nav>
+                </div>
                 <div class="col-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/about.jpg);">
                     <!-- <a href="https://vimeo.com/45830194" class="icon popup-vimeo d-flex justify-content-center align-items-center"> -->
-                        <span class="icon-play"></span>
+                    <span class="icon-play"></span>
                     </a>
                 </div>
                 <div class="col-md-7 wrap-about ftco-animate">
-                    <div class="heading-section-bold mb-4 mt-md-5">
+                    <div class="heading-section-bold">
                         <div class="ml-md-0">
-                            <h2 class="mb-4">Sign Up Now</h2>
+                            <h4 class="mb-4">Edit Merchant</h4>
                         </div>
                     </div>
-                    <div class="pb-md-5">
-                        <form action="index.html">
+                    <div class="pb-md-1">
+                        <form action="manage-merchant.html">
                             <div class="form-group row">
                                 <label for="inputEmail3" class="col-sm-4 col-form-label">First Name</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="inputEmail3" required="" placeholder="john">
+                                    <input type="text" class="form-control" id="inputEmail3" required="" value="Merchant-1">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="inputEmail3" class="col-sm-4 col-form-label">Last Name</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="inputEmail3" required="" placeholder="doe">
+                                    <input type="text" class="form-control" id="inputEmail3" required="" value="">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="inputEmail3" class="col-sm-4 col-form-label">Phone</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="inputEmail3" required="" placeholder="62854432344">
+                                    <input type="text" class="form-control" id="inputEmail3" required="" value="62854432344">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="inputEmail3" class="col-sm-4 col-form-label">Email</label>
                                 <div class="col-sm-8">
-                                    <input type="email" class="form-control" id="inputEmail3" required="" placeholder="Email">
+                                    <input type="email" class="form-control" id="inputEmail3" required="" value="JohnDoe@gmail.com">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="inputPassword3" class="col-sm-4 col-form-label">Password</label>
                                 <div class="col-sm-8">
-                                    <input type="password" class="form-control" required="" id="inputPassword3" placeholder="Password">
+                                    <input type="password" class="form-control" required="" id="inputPassword3" value="Password">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="inputPassword3" class="col-sm-4 col-form-label">Confirm Password</label>
                                 <div class="col-sm-8">
-                                    <input type="password" class="form-control" required="" id="inputPassword3" placeholder="Password">
+                                    <input type="password" class="form-control" required="" id="inputPassword3" value="Password">
                                 </div>
                             </div>
-                            <!-- <fieldset class="form-group">
-                                <div class="row">
-                                    <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-                                    <div class="col-sm-10">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                                            <label class="form-check-label" for="gridRadios1">
-                                                First radio
-                                            </label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                                            <label class="form-check-label" for="gridRadios2">
-                                                Second radio
-                                            </label>
-                                        </div>
-                                        <div class="form-check disabled">
-                                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-                                            <label class="form-check-label" for="gridRadios3">
-                                                Third disabled radio
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </fieldset> -->
-                            <!-- <div class="form-group row">
-                                <div class="col-sm-2">Checkbox</div>
-                                <div class="col-sm-10">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                        <label class="form-check-label" for="gridCheck1">
-                                            Example checkbox
-                                        </label>
-                                    </div>
-                                </div>
-                            </div> -->
                             <div class="form-group row">
-                                <div class="col-sm-6 pt-5">
-                                    <button type="submit" class="btn btn-primary float-right">Submit</button>
+                                <label for="inputEmail3" class="col-sm-4 col-form-label">Type</label>
+                                <div class="col-sm-8">
+                                    <select class="form-control">
+                                        <option>Personal</option>
+                                        <option>Organization</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Address</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" style="min-height: 5em !important;text-align: left !important;">Jl. Margonda Raya, Pondok Cina, Kecamatan Beji, Kota Depok, Jawa Barat 16424
+                            </textarea>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-6">
+                                    <button type="submit" class="btn btn-primary float-right">Save Edit</button>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href="manage-merchant.html" type="button"  class="btn btn-white float-left"><u>Deactivate</u></a>
                                 </div>
                             </div>
                         </form>
@@ -170,6 +160,7 @@
             </div>
         </div>
     </section>
+    <br>
     <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/bg_3.jpg);">
         <div class="container">
             <div class="row justify-content-center py-5">
