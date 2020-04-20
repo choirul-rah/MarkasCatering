@@ -52,20 +52,31 @@
             </button>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <!-- <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li> -->
+                    <!-- NAV ITEM -->
                     <li class="nav-item active dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown04">
                             <a class="dropdown-item" href="shop.html">Catalog</a>
-                            <!-- <a class="dropdown-item" href="wishlist.html">Wishlist</a> -->
-                            <!-- <a class="dropdown-item" href="product-single.html">Single Product</a> -->
                             <a class="dropdown-item" href="cart.html">Cart</a>
                             <a class="dropdown-item" href="list-order.html">Transaction</a>
                         </div>
                     </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Merchant</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown04">
+                            <a class="dropdown-item" href="list-order-merchant.html">List Order (1)</a>
+                            <a class="dropdown-item" href="manage-package.html">Manage Package</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown04">
+                            <a class="dropdown-item" href="list-order-admin.html">Payment Approval (2)</a>
+                            <a class="dropdown-item" href="manage-merchant.html">Manage Merchant</a>
+                        </div>
+                    </li>
                     <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                    <!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
-                    <!-- <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li> -->
+                    <!-- NAV ITEM END-->
                     <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
                     <li class="nav-item mx-3">
                         <a id="linkUser" href="#login-modal" data-toggle="modal" data-target="#login-modal" class="d-flex justify-content-center align-items-center text-center" style="white-space: nowrap;line-height: 1.5">
@@ -92,13 +103,16 @@
     <section class="ftco-section ftco-cart">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-10">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                            <li class="breadcrumb-item active" aria-current="page">Manage Package (Merchant)</li>
                         </ol>
                     </nav>
+                </div>
+                <div class="col-md-1">
+                    <a type="button" style="white-space: nowrap;" href="product-single-new.html" target="_blank" class="btn btn-success">Create New</a>
                 </div>
                 <div class="col-md-12 ftco-animate">
                     <div class="cart-list">
@@ -106,110 +120,187 @@
                             <thead class="thead-primary">
                                 <tr class="text-center">
                                     <th>&nbsp;</th>
-                                    <th>&nbsp;</th>
-                                    <th>Product name</th>
-                                    <th>Price</th>
-                                    <th>Quantity</th>
-                                    <th>Total</th>
+                                    <th>Product</th>
+                                    <th>Min Portion</th>
+                                    <th>Price per package</th>
+                                    <th>Last Update</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="text-center">
-                                    <td class="product-remove"><a href="#"><span class="ion-ios-close"></span></a></td>
                                     <td class="image-prod">
-                                        <h6 class="mb-1 pb-0" style="color: #dc3545;text-align: center !important">Merchant-1</h6>
+                                        <p></p>
                                         <div class="img" style="background-image:url(images/buffet.jpg);"></div>
                                     </td>
                                     <td class="product-name">
-                                        <h3><a href="product-single.html" style="color: #000000" target="_blank">Buffet-1</a></h3>
-                                        <p>Far far away, behind the word mountains, far from the countries</p>
+                                        <h4><a href="product-single.html" style="color: #000000" target="_blank">Buffet-1</a></h4>
+                                        <small>description of this package are so well written..</small>
                                     </td>
-                                    <td class="price">$120.00</td>
-                                    <td class="quantity">
-                                        <div class="input-group mb-3">
-                                            <input type="number" id="quantity" name="quantity" class="quantity form-control input-number" value="1" min="1">
-                                        </div>
+                                    <td class="price my-3" style="border-right: 0px solid #8c8b8b !important;">
+                                        150
                                     </td>
-                                    <td class="totalnya">$120.00</td>
-                                </tr><!-- END TR-->
-                                <!-- <tr class="text-center">
-                                    <td class="product-remove"><a href="#"><span class="ion-ios-close"></span></a></td>
+                                    <td class="totalnya">$12.00</td>
+                                    <td class="price">
+                                        2020-01-25
+                                    </td>
+                                    <td class="price">
+                                        <a type="button" style="white-space: nowrap;" href="product-single-edit.html" target="_blank" class="btn btn-primary">Check Detail</a>
+                                    </td>
+                                </tr>
+                                <tr class="text-center">
                                     <td class="image-prod">
-                                        <div class="img" style="background-image:url(images/product-4.jpg);"></div>
+                                        <p></p>
+                                        <div class="img" style="background-image:url(images/naskun.jpg);"></div>
                                     </td>
                                     <td class="product-name">
-                                        <h3>Bell Pepper</h3>
-                                        <p>Far far away, behind the word mountains, far from the countries</p>
+                                        <h4><a href="product-single.html" style="color: #000000" target="_blank">Nasi Kuning-1</a></h4>
+                                        <small>description of this package are so well written..</small>
                                     </td>
-                                    <td class="price">$15.70</td>
-                                    <td class="quantity">
-                                        <div class="input-group mb-3">
-                                            <input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
-                                        </div>
+                                    <td class="price">
+                                        50
                                     </td>
-                                    <td class="total">$15.70</td>
-                                </tr> -->
+                                    <td class="totalnya">$6.00</td>
+                                    <td class="price">
+                                        2020-01-09
+                                    </td>
+                                    <td class="price">
+                                        <a type="button" style="white-space: nowrap;" href="product-single-edit.html" target="_blank" class="btn btn-primary">Check Detail</a>
+                                    </td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td class="image-prod">
+                                        <div class="img" style="background-image:url(images/klepon.jpg);"></div>
+                                    </td>
+                                    <td class="product-name">
+                                        <h4><a href="product-single.html" style="color: #000000" target="_blank">Klepon-1</a></h4>
+                                        <small>description of this package are so well written..</small>
+                                    </td>
+                                    <td class="price">
+                                        20
+                                    </td>
+                                    <td class="totalnya">$3.00</td>
+                                    <td class="price">
+                                        2020-03-16
+                                    </td>
+                                    <td class="price">
+                                        <a type="button" style="white-space: nowrap;" href="product-single-edit.html" target="_blank" class="btn btn-primary">Check Detail</a>
+                                    </td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td class="image-prod">
+                                        <div class="img" style="background-image:url(images/gudeg.jpg);"></div>
+                                    </td>
+                                    <td class="product-name">
+                                        <h4><a href="product-single.html" style="color: #000000" target="_blank">Gudeg-1</a></h4>
+                                        <small>description of this package are so well written..</small>
+                                    </td>
+                                    <td class="price">
+                                        30
+                                    </td>
+                                    <td class="totalnya">$12.00</td>
+                                    <td class="price">
+                                        2020-02-11
+                                    </td>
+                                    <td class="price">
+                                        <a type="button" style="white-space: nowrap;" href="product-single-edit.html" target="_blank" class="btn btn-primary">Check Detail</a>
+                                    </td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td class="image-prod">
+                                        <div class="img" style="background-image:url(images/putu.jpeg);"></div>
+                                    </td>
+                                    <td class="product-name">
+                                        <h4><a href="product-single.html" style="color: #000000" target="_blank">Putu-1</a></h4>
+                                        <small>description of this package are so well written..</small>
+                                    </td>
+                                    <td class="price">
+                                        30
+                                    </td>
+                                    <td class="totalnya">$12.00</td>
+                                    <td class="price">
+                                        2020-02-21
+                                    </td>
+                                    <td class="price">
+                                        <a type="button" style="white-space: nowrap;" href="product-single-edit.html" target="_blank" class="btn btn-primary">Check Detail</a>
+                                    </td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td class="image-prod">
+                                        <div class="img" style="background-image:url(images/padang.jpg);"></div>
+                                    </td>
+                                    <td class="product-name">
+                                        <h4><a href="product-single.html" style="color: #000000" target="_blank">Nasi Padang-1</a></h4>
+                                        <small>description of this package are so well written..</small>
+                                    </td>
+                                    <td class="price">
+                                        30
+                                    </td>
+                                    <td class="totalnya">$12.00</td>
+                                    <td class="price">
+                                        2020-02-11
+                                    </td>
+                                    <td class="price">
+                                        <a type="button" style="white-space: nowrap;" href="product-single-edit.html" target="_blank" class="btn btn-primary">Check Detail</a>
+                                    </td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td class="image-prod">
+                                        <div class="img" style="background-image:url(images/nasgor.jpg);"></div>
+                                    </td>
+                                    <td class="product-name">
+                                        <h4><a href="product-single.html" style="color: #000000" target="_blank">Nasi Goreng-1</a></h4>
+                                        <small>description of this package are so well written..</small>
+                                    </td>
+                                    <td class="price">
+                                        30
+                                    </td>
+                                    <td class="totalnya">$12.00</td>
+                                    <td class="price">
+                                        2020-02-04
+                                    </td>
+                                    <td class="price">
+                                        <a type="button" style="white-space: nowrap;" href="product-single-edit.html" target="_blank" class="btn btn-primary">Check Detail</a>
+                                    </td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td class="image-prod">
+                                        <div class="img" style="background-image:url(images/nasi-uduk1.jpg);"></div>
+                                    </td>
+                                    <td class="product-name">
+                                        <h4><a href="product-single.html" style="color: #000000" target="_blank">Nasi Uduk-1</a></h4>
+                                        <small>description of this package are so well written..</small>
+                                    </td>
+                                    <td class="price">
+                                        30
+                                    </td>
+                                    <td class="totalnya">$10.00</td>
+                                    <td class="price">
+                                        2020-02-23
+                                    </td>
+                                    <td class="price">
+                                        <a type="button" style="white-space: nowrap;" href="product-single-edit.html" target="_blank" class="btn btn-primary">Check Detail</a>
+                                    </td>
+                                </tr>
                                 <!-- END TR-->
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-end">
-                <div class="col-lg-4 mt-5 cart-wrap ftco-animate">
-                    <!-- <div class="cart-total mb-3">
-                        <h3>Coupon Code</h3>
-                        <p>Enter your coupon code if you have one</p>
-                        <form action="#" class="info">
-                            <div class="form-group">
-                                <label for="">Coupon code</label>
-                                <input type="text" class="form-control text-left px-3" placeholder="">
-                            </div>
-                        </form>
+            <div class="row mt-5">
+                <div class="col text-center">
+                    <div class="block-27">
+                        <ul>
+                            <li><a href="javascript:void(0)">&lt;</a></li>
+                            <li class="active"><span>1</span></li>
+                            <li><a href="javascript:void(0)">2</a></li>
+                            <li><a href="javascript:void(0)">3</a></li>
+                            <li><a href="javascript:void(0)">4</a></li>
+                            <li><a href="javascript:void(0)">5</a></li>
+                            <li><a href="javascript:void(0)">&gt;</a></li>
+                        </ul>
                     </div>
-                    <p><a href="checkout.html" class="btn btn-primary py-3 px-4">Apply Coupon</a></p> -->
-                </div>
-                <div class="col-lg-4 mt-5 cart-wrap ftco-animate">
-                     <div class="cart-total mb-3">
-                        <h3>Enter your delivery destination</h3>
-                        <form action="#" class="info">
-                            <div class="form-group">
-                                <label for="">Phone</label>
-                                <input type="text" class="form-control text-left px-3" placeholder="">
-                            </div>
-                            <div class="form-group">
-                                <label for="country">Address</label>
-                                <input type="text" class="form-control text-left px-3" placeholder="">
-                            </div>
-                            <div class="form-group">
-                                <label for="country">Zip/Postal Code</label>
-                                <input type="text" class="form-control text-left px-3" placeholder="">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-5 cart-wrap ftco-animate">
-                    <div class="cart-total mb-3">
-                        <h3>Cart Totals</h3>
-                        <p class="d-flex">
-                            <span>Subtotal</span>
-                            <span class="totalnya">$120.00</span>
-                        </p>
-                        <p class="d-flex">
-                            <span>Delivery</span>
-                            <span>$0.00</span>
-                        </p>
-                        <p class="d-flex">
-                            <span>Discount</span>
-                            <span>$0.00</span>
-                        </p>
-                        <hr>
-                        <p class="d-flex total-price">
-                            <span>Total</span>
-                            <span class="totalnya">$120.00</span>
-                        </p>
-                    </div>
-                    <p><a href="checkout.html" class="btn btn-primary py-3 px-4">Proceed to Checkout</a></p>
                 </div>
             </div>
         </div>
@@ -236,7 +327,7 @@
         <div class="container">
             <div class="row">
                 <div class="mouse">
-                    <a href="#" class="mouse-icon">
+                    <a href="javascript:void(0)" class="mouse-icon">
                         <div class="mouse-wheel"><span class="ion-ios-arrow-up"></span></div>
                     </a>
                 </div>
@@ -247,9 +338,9 @@
                         <h2 class="ftco-heading-2">MarkasCatering</h2>
                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                            <li class="ftco-animate"><a href="javascript:void(0)"><span class="icon-twitter"></span></a></li>
+                            <li class="ftco-animate"><a href="javascript:void(0)"><span class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="javascript:void(0)"><span class="icon-instagram"></span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -257,10 +348,10 @@
                     <div class="ftco-footer-widget mb-4 ml-md-5">
                         <h2 class="ftco-heading-2">Menu</h2>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="py-2 d-block">Shop</a></li>
-                            <li><a href="#" class="py-2 d-block">About</a></li>
-                            <li><a href="#" class="py-2 d-block">Journal</a></li>
-                            <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+                            <li><a href="javascript:void(0)" class="py-2 d-block">Shop</a></li>
+                            <li><a href="javascript:void(0)" class="py-2 d-block">About</a></li>
+                            <li><a href="javascript:void(0)" class="py-2 d-block">Journal</a></li>
+                            <li><a href="javascript:void(0)" class="py-2 d-block">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -269,14 +360,14 @@
                         <h2 class="ftco-heading-2">Help</h2>
                         <div class="d-flex">
                             <ul class="list-unstyled mr-l-5 pr-l-3 mr-4">
-                                <li><a href="#" class="py-2 d-block">Shipping Information</a></li>
-                                <li><a href="#" class="py-2 d-block">Returns &amp; Exchange</a></li>
-                                <li><a href="#" class="py-2 d-block">Terms &amp; Conditions</a></li>
-                                <li><a href="#" class="py-2 d-block">Privacy Policy</a></li>
+                                <li><a href="javascript:void(0)" class="py-2 d-block">Shipping Information</a></li>
+                                <li><a href="javascript:void(0)" class="py-2 d-block">Returns &amp; Exchange</a></li>
+                                <li><a href="javascript:void(0)" class="py-2 d-block">Terms &amp; Conditions</a></li>
+                                <li><a href="javascript:void(0)" class="py-2 d-block">Privacy Policy</a></li>
                             </ul>
                             <ul class="list-unstyled">
-                                <li><a href="#" class="py-2 d-block">FAQs</a></li>
-                                <li><a href="#" class="py-2 d-block">Contact</a></li>
+                                <li><a href="javascript:void(0)" class="py-2 d-block">FAQs</a></li>
+                                <li><a href="javascript:void(0)" class="py-2 d-block">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -287,8 +378,8 @@
                         <div class="block-23 mb-3">
                             <ul>
                                 <li><span class="icon icon-map-marker"></span><span class="text">Jl. Salemba Raya No.4, Kenari, Kec. Senen, Kota Jakarta Pusat, DKI Jakarta 10430</span></li>
-                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">(021) 3106014</span></a></li>
-                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@markascatering.com</span></a></li>
+                                <li><a href="javascript:void(0)"><span class="icon icon-phone"></span><span class="text">(021) 3106014</span></a></li>
+                                <li><a href="javascript:void(0)"><span class="icon icon-envelope"></span><span class="text">info@markascatering.com</span></a></li>
                             </ul>
                         </div>
                     </div>

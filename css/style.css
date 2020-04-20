@@ -12876,9 +12876,9 @@ h5,
 }
 
 .table tbody tr td {
-    text-align: center !important;
+    text-align: center;
     vertical-align: middle;
-    padding: 15px 10px;
+    /*padding: 15px 10px;*/
     border: 1px solid transparent !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
 }
@@ -13196,7 +13196,7 @@ h5,
 }
 
 .form-control {
-    height: 52px !important;
+    /*height: 52px !important;*/
     background: #fff !important;
     color: #000000 !important;
     font-size: 18px;
@@ -13204,7 +13204,7 @@ h5,
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
 }
-
+form-control-sm
 .form-control:focus,
 .form-control:active {
     border-color: #000000;
