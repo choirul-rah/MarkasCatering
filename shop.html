@@ -5,6 +5,9 @@
     <title>MarkasCatering - AKPSI final project by Kelompok 1</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
@@ -81,16 +84,61 @@
     <!-- END nav -->
     <section class="ftco-section">
         <div class="container">
+            <!--  -->
             <div class="row justify-content-center">
-                <div class="col-md-12">
-                    <form action="blog.html" class="float-right search-form pt-2">
-                        <div class="form-group">
-                            <span class="icon ion-ios-search"></span>
-                            <input type="text" class="form-control" required="" placeholder="Search...">
+                <div class="col-md-12">Filter by:</div>
+                <div class="col-md-3">
+                    <form action="blog.html" class="float-left search-form pt-2">
+                        <div class="form-group px-3">
+                            <span class="icon ion-ios-search" onclick="location.href='blog.html';"></span>
+                            <input type="text" class="browser-default form-control" required="" placeholder=" Search...">
                         </div>
                     </form>
                 </div>
-                <div class="col-md-10 mb-5 text-center">
+                <div class="col-md-3">
+                    <form action="blog.html" class="float-left search-form pt-2">
+                        <select class="form-control">
+                            <option value="" disabled selected>Pilih Kategori</option>
+                            <option>Corporate Catring</option>
+                            <option>Wedding Catering</option>
+                            <option>Coffe Break</option>
+                            <option>Snack Box</option>
+                            <option>Rice Box</option>
+                            <option>Gubukan</option>
+                        </select>
+                        <!-- <label>Kategori</label> -->
+                    </form>
+                </div>
+                <div class="col-md-3">
+                    <form action="blog.html" class="float-left search-form pt-2">
+                        <!-- <div class="form-group"> -->
+                        <select class="form-control" id="select-categ">
+                            <option disabled selected="">Pilih Harga</option>
+                            <option>&lt; IDR30.000g</option>
+                            <option>IDR30.000 - IDR40.000</option>
+                            <option>IDR40.000 - IDR50.000</option>
+                            <option>IDR50.000 &lt;</option>
+                        </select>
+                        <!-- <label>Harga</label> -->
+                        <!-- </div> -->
+                    </form>
+                </div>
+                <div class="col-md-2">
+                    <form action="blog.html" class="float-left search-form pt-2">
+                        <!-- <div class="form-group"> -->
+                        <select class="form-control" id="select-categ">
+                            <option disabled selected="">Urutkan</option>
+                            <option>Highest Price</option>
+                            <option>Lowest Price</option>
+                            <option>Highest Rating</option>
+                            <option>Lowest Rating</option>
+                        </select>
+                        <!-- <label>Urutkan</label> -->
+                        <!-- </div> -->
+                    </form>
+                </div>
+                <div class="col-md-12 px-5"><hr style="width: 80%"><br></div>
+                <!-- <div class="col-md-10 mb-5 text-center">
                     <ul class="product-category">
                         <li><a href="javascript:void(0)" class="active">All</a></li>
                         <li><a href="javascript:void(0)">Special</a></li>
@@ -98,8 +146,9 @@
                         <li><a href="javascript:void(0)">Main Dish</a></li>
                         <li><a href="javascript:void(0)">Cake</a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
+
             <div class="row">
                 <div class="col-md-6 col-lg-3 ftco-animate">
                     <div class="product">
@@ -589,7 +638,7 @@
                 <div class="modal-body">
                 </div>
                 <div class="modal-footer">
-                    <a type="button" data-dismiss="modal" href="javascript:void(0)" class="btn"><u>Cancel</u></a>
+                    <a type="button" data-dismiss="modal" href="#" class="btn"><u>Cancel</u></a>
                     <button type="button" class="btn btn-primary" data-dismiss="modal" id="signout">Sign Out</button>
                 </div>
             </div>
@@ -612,6 +661,14 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // $('#select-categ').formSelect();
+        // $('select').formSelect();
+    });
+    </script>
 </body>
 
 </html>
