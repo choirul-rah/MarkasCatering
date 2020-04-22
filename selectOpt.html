@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="row justify-content-center">
+        <!-- <div class="col-md-12">Filter by:</div> -->
+        <div class="col-md-3">
+            <form action="blog.html" class="float-left search-form pt-2">
+                <div class="form-group px-3">
+                    <span class="icon ion-ios-search" onclick="location.href='blog.html';"></span>
+                    <input type="text" class="browser-default form-control" required="" placeholder=" Search...">
+                </div>
+            </form>
+        </div>
+        <div class="col-md-3">
+            <form action="blog.html" class="float-left search-form pt-2">
+                <select>
+                    <option value="" disabled selected>Pilih Kategori</option>
+                    <option>Corporate Catring</option>
+                    <option>Wedding Catering</option>
+                    <option>Coffe Break</option>
+                    <option>Snack Box</option>
+                    <option>Rice Box</option>
+                    <option>Gubukan</option>
+                </select>
+                <label>Kategori</label>
+            </form>
+        </div>
+        <div class="col-md-3">
+            <form action="blog.html" class="float-left search-form pt-2">
+                <!-- <div class="form-group"> -->
+                <select id="select-categ">
+                    <option selected="">Pilih Harga</option>
+                    <option>&lt; IDR30.000g</option>
+                    <option>IDR30.000 - IDR40.000</option>
+                    <option>IDR40.000 - IDR50.000</option>
+                    <option>IDR50.000 &lt;</option>
+                </select>
+                <label>Harga</label>
+                <!-- </div> -->
+            </form>
+        </div>
+        <div class="col-md-2">
+            <form action="blog.html" class="float-left search-form pt-2">
+                <!-- <div class="form-group"> -->
+                <select id="select-categ">
+                    <!-- <option selected="">Sort By</option> -->
+                    <option>Highest Price</option>
+                    <option>Lowest Price</option>
+                    <option>Highest Rating</option>
+                    <option>Lowest Rating</option>
+                </select>
+                <label>Urutkan</label>
+                <!-- </div> -->
+            </form>
+        </div>
+        <div class="col-md-12"><br></div>
+        <!-- <div class="col-md-10 mb-5 text-center">
+                    <ul class="product-category">
+                        <li><a href="javascript:void(0)" class="active">All</a></li>
+                        <li><a href="javascript:void(0)">Special</a></li>
+                        <li><a href="javascript:void(0)">Buffet</a></li>
+                        <li><a href="javascript:void(0)">Main Dish</a></li>
+                        <li><a href="javascript:void(0)">Cake</a></li>
+                    </ul>
+                </div> -->
+    </div>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // $('#select-categ').formSelect();
+        $('select').formSelect();
+    });
+    </script>
+</body>
+
+</html>
