@@ -350,7 +350,7 @@
      if (localStorage.getItem("emailMCIS") != null) {
          $('#nametag').html('Hello, <br>' + localStorage.getItem("emailMCIS"))
          $('#linkUser').attr("href", '#logout-modal')
-         $('#linkUser').attr('data-target','#logout-modal');
+         $('#linkUser').attr('data-target', '#logout-modal');
      }
      $("#signin").click(function() {
          localStorage.setItem("emailMCIS", $('#inputEmail3').val());
@@ -360,7 +360,7 @@
          localStorage.removeItem("emailMCIS");
          location.reload();
      });
-     
+
  });
 
  function includeHTML() {

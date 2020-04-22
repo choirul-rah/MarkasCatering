@@ -124,13 +124,13 @@
                                         <h3><a href="product-single.html" style="color: #000000" target="_blank">Buffet-1</a></h3>
                                         <p>Far far away, behind the word mountains, far from the countries</p>
                                     </td>
-                                    <td class="price">$120.00</td>
+                                    <td class="price">IDR1,500,000</td>
                                     <td class="quantity">
                                         <div class="input-group mb-3">
                                             <input type="number" id="quantity" name="quantity" class="quantity form-control input-number" value="1" min="1">
                                         </div>
                                     </td>
-                                    <td class="totalnya">$120.00</td>
+                                    <td class="totalnya">IDR1,500,000</td>
                                 </tr><!-- END TR-->
                                 <!-- <tr class="text-center">
                                     <td class="product-remove"><a href="#"><span class="ion-ios-close"></span></a></td>
@@ -141,13 +141,13 @@
                                         <h3>Bell Pepper</h3>
                                         <p>Far far away, behind the word mountains, far from the countries</p>
                                     </td>
-                                    <td class="price">$15.70</td>
+                                    <td class="price">IDR15.70</td>
                                     <td class="quantity">
                                         <div class="input-group mb-3">
                                             <input type="text" name="quantity" class="quantity form-control input-number" value="1" min="1" max="100">
                                         </div>
                                     </td>
-                                    <td class="total">$15.70</td>
+                                    <td class="total">IDR15.70</td>
                                 </tr> -->
                                 <!-- END TR-->
                             </tbody>
@@ -193,20 +193,20 @@
                         <h3>Cart Totals</h3>
                         <p class="d-flex">
                             <span>Subtotal</span>
-                            <span class="totalnya">$120.00</span>
+                            <span class="totalnya">IDR1,500,000</span>
                         </p>
                         <p class="d-flex">
                             <span>Delivery</span>
-                            <span>$0.00</span>
+                            <span>IDR0.00</span>
                         </p>
                         <p class="d-flex">
                             <span>Discount</span>
-                            <span>$0.00</span>
+                            <span>IDR0.00</span>
                         </p>
                         <hr>
                         <p class="d-flex total-price">
                             <span>Total</span>
-                            <span class="totalnya">$120.00</span>
+                            <span class="totalnya">IDR1,500,0000</span>
                         </p>
                     </div>
                     <p><a href="checkout.html" class="btn btn-primary py-3 px-4">Proceed to Checkout</a></p>
@@ -389,11 +389,11 @@
     <script>
     $(document).ready(function() {
 
-        $("#quantity").keyup(function() {
+        $("#quantity").change(function() {
             var quantity = parseInt($('#quantity').val());
             if (quantity < 1)
                 $('#quantity').val(1)
-            $('.totalnya').text("$" + (quantity * 120) + ".00")
+            $('.totalnya').text("$" + (quantity * 1500000))
         });
     });
     </script>
