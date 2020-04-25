@@ -107,8 +107,22 @@
                 <div class="col-lg-7 product-details pl-md-5 ftco-animate">
                     <form>
                         <div class="form-group row">
+                            <label for="inputEmail3" class="col-sm-3 col-form-label">Category</label>
+                            <div class="col-sm-4">
+                                <select class="form-control">
+                                    <option value="" disabled selected>Choose Category</option>
+                                    <option>Corporate Catring</option>
+                                    <option>Wedding Catering</option>
+                                    <option>Coffe Break</option>
+                                    <option>Snack Box</option>
+                                    <option>Rice Box</option>
+                                    <option>Gubukan</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
                             <label for="inputEmail3" class="col-sm-3 col-form-label">Name</label>
-                            <div class="col-sm-9">
+                            <div class="col-sm-7">
                                 <input style="text-align: left !important;" type="email" class="form-control" id="inputEmail3" placeholder="Buffet (Prasmanan)">
                             </div>
                         </div>
@@ -125,7 +139,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="inputEmail3" class="col-sm-3 col-form-label">Change picture</label>
+                            <label for="inputEmail3" class="col-sm-3 col-form-label">Choose picture</label>
                             <div class="col-sm-7">
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input" required="" id="customFile">
@@ -159,7 +173,7 @@
                                         <th scope="col"></th>
                                     </tr>
                                 </thead>
-                                <tbody style="text-align: left !important">                                    
+                                <tbody style="text-align: left !important">
                                 </tbody>
                             </table>
                         </form>
@@ -169,7 +183,6 @@
             </div>
         </div>
     </section>
-    
     <section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
         <div class="container py-4">
             <div class="row d-flex justify-content-center py-5">
@@ -362,7 +375,7 @@
 
     function editrow(elm) {
         var TR = $(elm).closest("tr").children('td')
-         $(elm).hide();
+        $(elm).hide();
         //find children
         // console.log(TR.eq(0).text()+" "+TR.eq(1).text()+" "+TR.eq(2).text())
         TR.eq(0).html(

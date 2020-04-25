@@ -418,6 +418,7 @@
      } else if (roleMCIS == null) {
          var liShop = $('#dropdown04').parent().parent().children(':first-child');
          $('#dropdown04').parent().hide()
+         $('.icon-shopping_cart').parent().hide()
      }
  });
 
