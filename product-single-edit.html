@@ -209,16 +209,16 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <p><a href="manage-package.html" class="btn btn-primary py-3 px-5 float-right">Save Package</a></p>
+                    <p><a href="#delete-modal" data-toggle="modal" data-target="#delete-modal" class="btn btn-white mx-2 py-3 px-5 float-right"><u>Delete Package</u></a>
+                        <a href="manage-package.html" class="btn btn-primary py-3 px-5 float-right">Save Package</a></p>
                 </div>
-                <div class="col-md-12">
+                <!-- <div class="col-md-12">
                     <br>
-                    <p><a href="manage-package.html" class="btn btn-white py-3 px-5 float-right"><u>Delete Package</u></a></p>
-                </div>
+                    <p><a href="#delete-modal" data-toggle="modal" data-target="#delete-modal" class="btn btn-white py-3 px-5 float-right"><u>Delete Package</u></a></p>
+                </div> -->
             </div>
         </div>
     </section>
- 
     <section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
         <div class="container py-4">
             <div class="row d-flex justify-content-center py-5">
@@ -375,6 +375,24 @@
         </div>
     </div>
     <!-- MODAL LOGOUT -->
+    <!-- MODAL DELETE -->
+    <div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Are you sure?</h5>
+                </div>
+                <div class="modal-body">
+                    Do you really want to remove this package? This process cannot be undone.
+                </div>
+                <div class="modal-footer">
+                    <a type="button" data-dismiss="modal" href="javascript:void(0)" class="btn"><u>Cancel</u></a>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="window.location.href ='manage-package.html' ">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL DELETE -->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
