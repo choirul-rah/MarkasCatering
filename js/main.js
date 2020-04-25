@@ -346,21 +346,80 @@
  // localStorage.removeItem("key");
 
  $(document).ready(function() {
+     var roleMCIS = localStorage.getItem("roleMCIS");
+     console.log(roleMCIS)
      includeHTML()
+
      if (localStorage.getItem("emailMCIS") != null) {
          $('#nametag').html('Hello, <br>' + localStorage.getItem("emailMCIS"))
          $('#linkUser').attr("href", '#logout-modal')
          $('#linkUser').attr('data-target', '#logout-modal');
      }
+
+     $("#inputPassword3").on('keyup', function(e) {
+         if ($("#inputPassword3").val() == "")
+             return;
+         if (e.keyCode === 13) {
+             var email = $('#inputEmail3').val();
+             localStorage.setItem("emailMCIS", email);
+             if (email.toUpperCase() === "admin01".toUpperCase()) {
+                 localStorage.setItem("roleMCIS", 'admin');
+             } else if (email.toUpperCase() === "merchant01".toUpperCase()) {
+                 localStorage.setItem("roleMCIS", 'merchant');
+             } else {
+                 localStorage.setItem("roleMCIS", 'customer');
+             }
+             location.reload();
+         }
+     });
      $("#signin").click(function() {
-         localStorage.setItem("emailMCIS", $('#inputEmail3').val());
+         var email = $('#inputEmail3').val();
+         localStorage.setItem("emailMCIS", email);
+         if (email.toUpperCase() === "admin01".toUpperCase()) {
+             localStorage.setItem("roleMCIS", 'admin');
+         } else if (email.toUpperCase() === "merchant01".toUpperCase()) {
+             localStorage.setItem("roleMCIS", 'merchant');
+         } else {
+             localStorage.setItem("roleMCIS", 'customer');
+         }
          location.reload();
      });
      $("#signout").click(function() {
-         localStorage.removeItem("emailMCIS");
-         location.reload();
+         localStorage.clear();
+         window.localStorage.clear();
+         window.location.href = 'index.html';
      });
-
+     if (roleMCIS === "admin") {
+         var liShop = $('#dropdown04').parent().parent().children(':first-child');
+         $(
+             '<li class="nav-item dropdown">' +
+             '<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</a>' +
+             '<div class="dropdown-menu" aria-labelledby="dropdown04">' +
+             '<a class="dropdown-item" href="list-order-admin.html">Payment Approval (2)</a>' +
+             '<a class="dropdown-item" href="manage-merchant.html">Manage Merchant</a>' +
+             '</div>' +
+             '</li>'
+         ).insertAfter(liShop);
+         $('#dropdown04').parent().hide()
+         $('.icon-shopping_cart').parent().hide()
+     } else if (roleMCIS === "merchant") {
+         var liShop = $('#dropdown04').parent().parent().children(':first-child');
+         $(
+             '<li class="nav-item active dropdown">' +
+             '<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Merchant</a>' +
+             '<div class="dropdown-menu" aria-labelledby="dropdown04">' +
+             '<a class="dropdown-item" href="list-order-merchant.html">List Order (1)</a>' +
+             '<a class="dropdown-item" href="manage-package.html">Manage Package</a>' +
+             '</div>' +
+             '</li>'
+         ).insertAfter(liShop);
+         $('#dropdown04').parent().hide()
+         $('.icon-shopping_cart').parent().hide()
+     } else if (roleMCIS == null) {
+         var liShop = $('#dropdown04').parent().parent().children(':first-child');
+         $('#dropdown04').parent().hide()
+         $('.icon-shopping_cart').parent().hide()
+     }
  });
 
  function includeHTML() {
