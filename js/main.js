@@ -312,13 +312,14 @@
 
      function makeTimer() {
 
-         var endTime = new Date("21 December 2019 9:56:00 GMT+01:00");
+         var endTime = new Date("21 December 2020 9:56:00 GMT+01:00");
          endTime = (Date.parse(endTime) / 1000);
 
          var now = new Date();
          now = (Date.parse(now) / 1000);
+         console.log(now)
 
-         var timeLeft = endTime - now;
+         var timeLeft = endTime - now; 
 
          var days = Math.floor(timeLeft / 86400);
          var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
